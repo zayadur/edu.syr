@@ -1,0 +1,7 @@
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Homework 3> java -classpath . TankCar
+Volume of Tankcar 1 is: 3926.9908169872415 cubic feet.
+Volume of Tankcar 2 is: 18849.55592153876 cubic feet.
+Calculated volume of Tankcar 1 is: 3926.9908169872415
+Dimensions of Tankcar 1: 70.0  10.0
+Weight of Toxcar 2: 10450.0
+Manufacture year of Toxcar 2: 1984.0

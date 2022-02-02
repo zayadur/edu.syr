@@ -1,0 +1,18 @@
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Homework 3> java -classpath . Quadratic
+0.0*x^2 + 0.0*x + 0.0 has:
+  one root: -0.0
+0.0*x^2 + 0.0*x + 0.0 has:
+  one root: -0.0
+0.0*x^2 + 0.0*x + 1.0 has:
+  one root: -0.0
+0.0*x^2 + -1.0*x + 1.0 has:
+  two roots: 1.0 and 1.0
+1.0*x^2 + -1.0*x + 1.0 has:
+  infinitely many roots
+1.0*x^2 + -2.0*x + 1.0 has:
+  one root: 2.0
+1.0*x^2 + -3.0*x + 1.0 has:
+  two roots: 1.881966011250105 and 4.118033988749895
+Evaluating Quadratic at 3: 1.0
+Scaling Quadratic by 2: 2.0*x^2 + -6.0*x + 2.0
+Sum of quadratics: 2.0*x^2 + -4.0*x + 2.0

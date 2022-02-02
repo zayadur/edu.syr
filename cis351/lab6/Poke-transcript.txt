@@ -1,0 +1,55 @@
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 6> javac Poke.java
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 6> java -classpath . Poke
+
+**PUZZLE 0 Experments**
+p0.a is -T-O-
+p0.b is -Y-O-
+p0.a is -T-X-
+p0.b is -Y-X-
+
+**PUZZLE 1 Experments**
+p1.a is -e-a-s-y-
+p1.b is -e-a-s-y-
+
+Change all the e's in p1.b to h's
+p1.a is -h-a-s-y-
+p1.b is -h-a-s-y-
+
+Change all the a's in p1.a to e's
+p1.a is -h-e-s-y-
+p1.b is -h-e-s-y-
+
+Change all the s's in p1.b to a's
+p1.a is -h-e-a-y-
+p1.b is -h-e-a-y-
+
+Change all the y's in p1.a to r's
+p1.a is -h-e-a-r-
+p1.b is -h-e-a-r-
+
+**PUZZLE 2 Experments**
+p2.a is -l-o-o-k-
+p2.b is -l-o-o-k-
+
+Change all the l's in p2.a to r's
+p2.a is -r-o-o-k-
+p2.b is -l-o-o-k-
+
+Change all the o's in p2.a to u's
+p2.a is -r-u-u-k-
+p2.b is -l-o-u-k-
+
+Change all the k's in p2.a to n's
+p2.a is -r-u-u-n-
+p2.b is -l-o-u-n-
+The first letter in p2.a is: r
+
+**PUZZLE 3 Experments**
+p3.a is -
+
+Pushing a, b, c to p3.a
+p3.a is -a-b-c-
+
+Poking p3.b
+-y-c-
+-f-y-c-

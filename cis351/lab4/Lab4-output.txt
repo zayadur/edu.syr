@@ -1,0 +1,17 @@
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 4> javac Trace.java
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 4> java -classpath . Lab4
+                                                       >> Entering: fact with: argument n = 4
+           >> Entering: fact with: argument n = 3
+            >> Entering: fact with: argument n = 2
+             >> Entering: fact with: argument n = 1
+              >> Entering: fact with: argument n = 0
+                                                                                                                        << Leaving:  fact with result: 1
+<< Leaving:  fact with result: 1
+<< Leaving:  fact with result: 2
+<< Leaving:  fact with result: 6
+<< Leaving:  fact with result: 24
+fact(4) = 24
+
+Even(4) = true
+
+fib(5) = 5

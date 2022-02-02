@@ -1,0 +1,7 @@
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Homework 3> java -classpath . BoxCar
+Volume of the Boxcar 1 is: 5170.0 cubic feet.
+Volume of the Boxcar 2 is: 5940.0 cubic feet.
+Volume of Boxcar 1 is: 5170.0
+Dimensions of Boxcar 1 (L, H, W): 60.0  9.0  11.0
+Weight of Boxcar 2: 6500.0
+Manufacture year of Boxcar 2: 1999.0

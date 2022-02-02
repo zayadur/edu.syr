@@ -1,0 +1,219 @@
+index = 100; limit <= 500; increment = 100
+
+The array size is 100
+Number of steps for Sort 1:         2728
+ (i) 5.923777   (ii) 0.272800   (iii) 0.002728
+Number of steps for Sort 2:          849
+Number of steps for Sort 3:       495100
+Number of steps for Sort 4:          773
+The array size is 200
+Number of steps for Sort 1:         9863
+ (i) 9.307672   (ii) 0.246575   (iii) 0.001233
+Number of steps for Sort 2:         1876
+Number of steps for Sort 3:      3980200
+Number of steps for Sort 4:         1764
+The array size is 300
+Number of steps for Sort 1:        22534
+ (i) 13.169039   (ii) 0.250378   (iii) 0.000835
+Number of steps for Sort 2:         2911
+Number of steps for Sort 3:     13455300
+Number of steps for Sort 4:         2807
+The array size is 400
+Number of steps for Sort 1:        40404
+ (i) 16.858983   (ii) 0.252525   (iii) 0.000631
+Number of steps for Sort 2:         4217
+Number of steps for Sort 3:     31920400
+Number of steps for Sort 4:         3921
+
+For array sizes of 100s, the sort1 method consistently has a 0.2 runtime 
+for Θ(n^2).
+
+---
+
+index = 1000; limit <= 10000; increment = 1000
+
+The array size is 1000
+Number of steps for Sort 1:       243941
+ Number of steps for Sort 2:        11997
+(i) 1.736744   (ii) 0.011997   (iii) 0.000012
+Number of steps for Sort 3:    499501000
+Number of steps for Sort 4:        11128
+The array size is 2000
+Number of steps for Sort 1:       992566
+ Number of steps for Sort 2:        26415
+(i) 1.737623   (ii) 0.006604   (iii) 0.000003
+Number of steps for Sort 3:   3998002000
+Number of steps for Sort 4:        24175
+The array size is 3000
+Number of steps for Sort 1:      2209560
+ Number of steps for Sort 2:        41171
+(i) 1.714094   (ii) 0.004575   (iii) 0.000002
+Number of steps for Sort 3:  13495503000
+Number of steps for Sort 4:        38071
+The array size is 4000
+Number of steps for Sort 1:      4032501
+ Number of steps for Sort 2:        56694
+(i) 1.708876   (ii) 0.003543   (iii) 0.000001
+Number of steps for Sort 3:  31992004000
+Number of steps for Sort 4:        52352
+The array size is 5000
+Number of steps for Sort 1:      6199687
+ Number of steps for Sort 2:        71400
+(i) 1.676609   (ii) 0.002856   (iii) 0.000001
+Number of steps for Sort 3:  62487505000
+Number of steps for Sort 4:        67100
+The array size is 6000
+Number of steps for Sort 1:      9041303
+ Number of steps for Sort 2:        87488
+(i) 1.676109   (ii) 0.002430   (iii) 0.000000
+Number of steps for Sort 3: 107982006000
+Number of steps for Sort 4:        82154
+The array size is 7000
+Number of steps for Sort 1:     12167181
+ Number of steps for Sort 2:       103810
+(i) 1.675012   (ii) 0.002119   (iii) 0.000000
+Number of steps for Sort 3: 171475507000
+Number of steps for Sort 4:        97336
+The array size is 8000
+Number of steps for Sort 1:     15894645
+ Number of steps for Sort 2:       120102
+(i) 1.670460   (ii) 0.001877   (iii) 0.000000
+Number of steps for Sort 3: 255968008000
+Number of steps for Sort 4:       112648
+The array size is 9000
+Number of steps for Sort 1:     20458722
+ Number of steps for Sort 2:       136998
+(i) 1.671832   (ii) 0.001691   (iii) 0.000000
+Number of steps for Sort 3: 364459509000
+Number of steps for Sort 4:       128321
+
+For array sizes of 1000s, the sort2 method maintains 10^-5 runtime,
+indicating it is Θ(n^3).
+
+---
+
+The array size is 1000
+Number of steps for Sort 1:       244091
+ Number of steps for Sort 2:        11862
+Number of steps for Sort 3:    499501000
+(i) 72310.176002   (ii) 499.501000   (iii) 0.499501
+Number of steps for Sort 4:        11064
+The array size is 2000
+Number of steps for Sort 1:      1003857
+ Number of steps for Sort 2:        26192
+Number of steps for Sort 3:   3998002000
+(i) 262995.218086   (ii) 999.500500   (iii) 0.499750
+Number of steps for Sort 4:        24228
+The array size is 3000
+Number of steps for Sort 1:      2259063
+ Number of steps for Sort 2:        40723
+Number of steps for Sort 3:  13495503000
+(i) 561865.410499   (ii) 1499.500333   (iii) 0.499833
+Number of steps for Sort 4:        38082
+The array size is 4000
+Number of steps for Sort 1:      4020261
+ Number of steps for Sort 2:        55999
+Number of steps for Sort 3:  31992004000
+(i) 964305.899657   (ii) 1999.500250   (iii) 0.499875
+Number of steps for Sort 4:        52362
+The array size is 5000
+Number of steps for Sort 1:      6290523
+ Number of steps for Sort 2:        72479
+Number of steps for Sort 3:  62487505000
+(i) 1467326.232848   (ii) 2499.500200   (iii) 0.499900
+Number of steps for Sort 4:        66996
+The array size is 6000
+Number of steps for Sort 1:      8923039
+ Number of steps for Sort 2:        87680
+Number of steps for Sort 3: 107982006000
+(i) 2068736.190568   (ii) 2999.500167   (iii) 0.499917
+Number of steps for Sort 4:        82156
+The array size is 7000
+Number of steps for Sort 1:     12135704
+ Number of steps for Sort 2:       103576
+Number of steps for Sort 3: 171475507000
+(i) 2766820.273378   (ii) 3499.500143   (iii) 0.499929
+Number of steps for Sort 4:        97433
+The array size is 8000
+Number of steps for Sort 1:     16099199
+ Number of steps for Sort 2:       120023
+Number of steps for Sort 3: 255968008000
+(i) 3560175.841085   (ii) 3999.500125   (iii) 0.499938
+Number of steps for Sort 4:       112624
+The array size is 9000
+Number of steps for Sort 1:     20415002
+ Number of steps for Sort 2:       139680
+Number of steps for Sort 3: 364459509000
+(i) 4447621.152275   (ii) 4499.500111   (iii) 0.499944
+Number of steps for Sort 4:       128311
+
+For array sizes of 1000s, the sort3 method maintains a consistent runtime of 0.49
+on runtime Θ(n^3).
+
+---
+
+The array size is 10000
+Number of steps for Sort 1:     24982435
+ Number of steps for Sort 2:       153907
+Number of steps for Sort 3: 499950010000
+Number of steps for Sort 4:       144152
+(i) 1.565110   (ii) 0.001442   (iii) 0.000000
+The array size is 20000
+Number of steps for Sort 1:     99992317
+ Number of steps for Sort 2:       328453
+Number of steps for Sort 3: 3999800020000
+Number of steps for Sort 4:       308274
+(i) 1.556391   (ii) 0.000771   (iii) 0.000000
+The array size is 30000
+Number of steps for Sort 1:    224289963
+ Number of steps for Sort 2:       510280
+Number of steps for Sort 3: 13499550030000
+Number of steps for Sort 4:       480098
+(i) 1.552366   (ii) 0.000533   (iii) 0.000000
+The array size is 40000
+Number of steps for Sort 1:    398613086
+ Number of steps for Sort 2:       694573
+Number of steps for Sort 3: 31999200040000
+Number of steps for Sort 4:       657089
+(i) 1.550230   (ii) 0.000411   (iii) 0.000000
+The array size is 50000
+Number of steps for Sort 1:    624201528
+ Number of steps for Sort 2:       884440
+Number of steps for Sort 3: 62498750050000
+Number of steps for Sort 4:       837435
+(i) 1.547971   (ii) 0.000335   (iii) 0.000000
+The array size is 60000
+Number of steps for Sort 1:    898965472
+ Number of steps for Sort 2:      1093278
+Number of steps for Sort 3: 107998200060000
+Number of steps for Sort 4:      1019686
+(i) 1.544684   (ii) 0.000283   (iii) 0.000000
+The array size is 70000
+Number of steps for Sort 1:   1231798140
+ Number of steps for Sort 2:      1283822
+Number of steps for Sort 3: 171497550070000
+Number of steps for Sort 4:      1204287
+(i) 1.542104   (ii) 0.000246   (iii) 0.000000
+The array size is 80000
+Number of steps for Sort 1:   1603099844
+ Number of steps for Sort 2:      1486949
+Number of steps for Sort 3: 255996800080000
+Number of steps for Sort 4:      1393453
+(i) 1.542825   (ii) 0.000218   (iii) 0.000000
+The array size is 90000
+Number of steps for Sort 1:   2021490438
+ Number of steps for Sort 2:      1682884
+Number of steps for Sort 3: 364495950090000
+Number of steps for Sort 4:      1583581
+(i) 1.542428   (ii) 0.000196   (iii) 0.000000
+
+For arrays of 10000s, sort4 maintains a runtime of around 1.5 for Θ(n log n).
+
+---
+
+!!! RESULTS !!!
+
+sort1 - Θ(n^2)
+sort2 - Θ(n^3)
+sort3 - Θ(n^3)
+sort4 - Θ(n log n)

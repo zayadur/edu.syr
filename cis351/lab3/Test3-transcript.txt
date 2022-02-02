@@ -1,0 +1,5 @@
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 3> javac .\Test3.java
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 3> java -classpath . Test3
+Box 3 run on: Fri Sep 23 00:22:52 EDT 2016
+x: 34
+y: 8

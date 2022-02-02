@@ -1,0 +1,34 @@
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 2> javac .\SmallerRoot.java
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 2> java -classpath . SmallerRoot
+Enter three numbers: 1 -3 2
+The smaller root of 1.0x^2 + -3.0x + 2.0 is 1.0
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 2> java -classpath . SmallerRoot
+Enter three numbers: 1 -2 -3
+Sorry, no such root
+The smaller root of 1.0x^2 + -2.0x + -3.0 is 0.0
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 2> java -classpath . SmallerRoot
+Enter three numbers: 0 1 1
+Sorry, no such root
+The smaller root of 0.0x^2 + 1.0x + 1.0 is 0.0
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 2> java -classpath . SmallerRoot
+Enter three numbers: 1 1 1
+Sorry, no such root
+The smaller root of 1.0x^2 + 1.0x + 1.0 is 0.0
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 2> javac .\CCount.java
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 2> java -classpath . CCount
+Name of the input file: fan
+That file has 1662 characters.
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 2> java -classpath . CCount
+Name of the input file: father
+That file has 1460 characters.
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 2> java -classpath . CCount
+Name of the input file: fox
+That file has 4673 characters.
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 2> java -classpath . CCount
+Name of the input file: fubar
+Caught: java.io.FileNotFoundException: fubar (The system cannot find the file specified)
+try again...
+fubar
+Caught: java.io.FileNotFoundException: fubar (The system cannot find the file specified)
+Sorry, too many bad inputs
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 2>

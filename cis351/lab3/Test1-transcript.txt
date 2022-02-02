@@ -1,0 +1,18 @@
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 3> javac .\Test1.java
+PS C:\Users\zayad\Google Drive\Documents\Syracuse\CIS-351\Lab 3> java -classpath . Test1
+Box1 run on Thu Sep 22 23:06:30 EDT 2016
+23
+32
+23
+90
+
+!!! REPORT !!!
+
+Two objects 'x' and 'y' are created to set values to the variables 'a' and 'b' in the Box1 class
+The first object 'x' is used to set values to both variables 'a' and 'b', and the values are printed
+Then the second object 'y' was used to set different values to 'a' and 'b', and the values were printed using the object 'x'
+It can be observed that the value for 'a' remains the same in both scenarios, but the value for 'b' is changed
+
+This indicates that, since an instance of 'b' was created within this method and a value was applied to it, 
+    and it did not changed when a new value was assigned to it, then 'b' is a static variable. However, 
+    since 'a's value changed with a second assignment, this indicates it was an instance variable of the Box1 class.
