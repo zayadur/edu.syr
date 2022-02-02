@@ -1,0 +1,108 @@
+relative performance
+
+performanceA / performanceB == executionTimeB / executionTimeA
+
+    example:    computerA runs program in 10 seconds
+                computerB runs program in 15 seconds
+                how much faster is A than B?
+
+                    15/10 = 1.5
+                    
+                    A is 1.5 times as fast than B
+
+
+clock cycles and clock cycle times
+
+    CPU execution time = CPU clock cycles * clock cycle time
+    CPU execution time = CPU clock cycles / clock rate
+
+    improving performance:  program runs in 10 seconds on computerA
+                            computerA has 2GHz clock
+                            want computerB to run program in 6 seconds
+
+                            computerB requires 1.2 times as many clock cycles
+                            what clock rate should designer target?
+
+                                CPU timeA = CPU clock cycles A / clock rate A
+                                10 seconds = CPU clock cycles A / 2.9 * 10^9 cycles/seconds
+                                CPU clock cycles A = 10s * 2 * 10^9 cycles/sec = 20 * 10^9 cycles
+
+
+                                CPU time B = 1.2 * CPU clock cycles A / clock rate B
+                                6 seconds = 1.2 * 20 * 10^9 cycles / clock rate B
+                                clock rate B = 1.2 * 20 * 10^9 cycles / 6 seconds = 4 * 10^9 cycles/sec = 4 GHz
+
+                                computer B must have twice the clock rate of A
+
+
+instruction performance
+
+    CPU clock cycles = instructions * average clock cycles per instruction (CPI)
+
+    example:    computerA clock cycle time 250ps and CPI 2.0
+                computerB clock cycle time 500ps and CPI 1.2
+                which computer is faster and by how much?
+
+                CPU clock cycles A = I * 2.0 (I = number of instructions)
+                CPU clock cycles B = I * 1.2
+
+                CPU time A = CPU clock cycles A * clock cycle time = I * 2.0 * 250 = 500 * I ps
+                CPU time B = I * 1.2 * 500 = 600 * I ps
+
+                    computer A is faster
+                
+                by how much?
+                
+                CPU performance A / CPU performance B = execution time B / execution time A = 600 * I ps / 500 * I ps = 1.2
+
+                    computer A is 1.2 times as fast as computer B
+
+
+CPU performance equation
+
+    CPU time = instruction count * CPI * clock cycle time
+    CPU time = instruction count * CPI / clock rate
+
+
+    example
+                        A   B   C
+    CPI                 1   2   3
+
+    Code Sequence
+    1                   2   1   2
+    2                   4   1   1
+
+    Which code sequence executes the most instructions?
+    Which will be faster?
+    What is the CPI for each sequence?
+
+        Sequence 1 = 2 + 1 + 2 = 5 instructions
+        Sequence 2 = 4 + 1 + 1 = 6 instructions
+
+        Sequence 2 executes the most instructions
+
+
+        CPU clock cycles1 = (2*1) + (1*2) + (2*3) = 10
+        CPU clock cycles2 = (4*1) + (1*2) + (1*3) = 9
+
+        Sequence 2 is faster
+
+        CPI = CPU clock cycles / instructions
+        CPI1 = 10 / 5 = 2.0
+        CPI2 = 9 / 6 = 1.5
+
+
+Amdahl's Law
+
+    Execution time after improvement
+
+    = (execution time affected by improvement / amount of improvement) + execution time unaffected
+
+
+MIPS
+
+    MIPS = instruction count / (execution time * 10^6)
+
+    MIPS = instruction count / (((instruction count * CPI) / clock rate)) * 10^6) = clock rate / CPI * 10^6
+
+    

@@ -1,0 +1,94 @@
+Problem 1
+
+*Main> rmChar 'i' "mississippi"
+"msssspp"
+*Main> rmChar 'j' "mississippi"
+"mississippi"
+*Main> rmChar 'a' "alabama"
+"lbm"
+
+Problem 2 - rmCharsRec
+
+*Main> rmCharsRec "xy" "xyz"
+"z"
+*Main> rmCharsRec "abc" "xyz"
+"xyz"
+*Main> rmCharsRec "bde" "abcdef"
+"acf"
+
+Problem 2 - rmCharsFold
+
+*Main> rmCharsFold "xy" "xyz"
+"z"
+*Main> rmCharsFold "abc" "xyz"
+"xyz"
+*Main> rmCharsRec "bde" "abcdef"
+"acf"
+
+Problem 3 - andRec
+
+*Main> andRec []
+True
+*Main> andRec [True,True]
+True
+*Main> andRec [True,False]
+False
+*Main> andRec [False,False]
+False
+
+Problem 3 - andFold
+
+*Main> andFold []
+True
+*Main> andFold [True,True]
+True
+*Main> andFold [True,False]
+False
+*Main> andFold [False,True]
+False
+*Main> andFold [False,False]
+False
+
+Problem 4
+
+*Main> same []
+True
+*Main> same [22]
+True
+*Main> same [5,5,5]
+True
+*Main> same [5,5,4]
+False
+*Main> same [1,1,0]
+False
+*Main> same [1,1,1]
+True
+*Main> same [0]
+True
+*Main> same [0, -1]
+False
+*Main> same [-1, -1]
+True
+
+Problem 5
+
+*ITree> quickCheck prop_treeInsert1
++++ OK, passed 100 tests.
+
+*ITree> quickCheck prop_treeInsert2
+*** Failed! (after 10 tests and 3 shrinks):
+Exception:
+  The a-node has a left count of 0 but the correct value is 1 in the ITree:
+  Node 'a' (Node 'A' Empty Empty 0) Empty 0
+  CallStack (from HasCallStack):
+    error, called at ITree.hs:81:19 in main:ITree
+"aA"
+
+Problem 6
+incomplete
+
+Problem 7
+incomplete
+
+Problem 8
+only managed to fix rr and rl

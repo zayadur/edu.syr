@@ -1,0 +1,35 @@
+*Main> quickCheck dist_prop
+*** Failed! Falsifiable (after 2 tests and 2 shrinks):
+(0.3780707015764372,0.8502635934691007)
+(0.0,9.501969376003783e-2)
+
+VOWELS
+*Main> quickCheck vowel_prop
++++ OK, passed 100 tests.
+*Main> isVowel 'a'
+True
+*Main> isVowel 'b'
+False
+
+DISEMVOWEL
+*Main> quickCheck disemv_prop
++++ OK, passed 100 tests.
+*Main> disEmvowel "mississippi mud pie"
+"msssspp md p"
+
+SMASH
+did not complete smash
+
+CIPHER
+could not complete without smash
+
+CAPITALIZE
+*Main> quickCheck cap_prop
++++ OK, passed 100 tests.
+*Main> capitalized "sYrAcUsE"
+"Syracuse"
+
+TITLE
+*Main> quickCheck title_prop
+*** Failed! Falsifiable (after 1 test):
+Blither "l "
