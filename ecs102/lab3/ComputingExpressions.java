@@ -1,6 +1,6 @@
 //*************************************************
 // ComputingExpressions.java Author: Baruch
-// your name here
+// Edited by Zayadur Khan
 // What will be the output?
 //*************************************************
 public class ComputingExpressions

@@ -1,6 +1,6 @@
 //*********************************
 // Consistency.java  Author: Baruch
-// Zayadur Khan
+// Edited by Zayadur Khan
 // What will be the output?
 //*********************************
 
