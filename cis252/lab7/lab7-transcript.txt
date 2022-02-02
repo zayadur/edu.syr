@@ -1,0 +1,33 @@
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\zayad> cd '.\Google Drive\Documents\Syracuse University\CIS-252\lab7\'
+PS C:\Users\zayad\Google Drive\Documents\Syracuse University\CIS-252\lab7> ls
+
+
+    Directory: C:\Users\zayad\Google Drive\Documents\Syracuse University\CIS-252\lab7
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         3/9/2017   6:17 PM            580 lab7.hs
+
+
+PS C:\Users\zayad\Google Drive\Documents\Syracuse University\CIS-252\lab7> ghci
+GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
+Prelude> :l lab7.hs
+[1 of 1] Compiling Main             ( lab7.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> roundEm [49.3, 121.73, 4.19]
+[49,122,4]
+*Main> getLengths ["Spring","break's","almost","here"]
+[("Spring",6),("break's",7),("almost",6),("here",4)]
+*Main> grabOdds [34, -7, 2, 0, -8, 5, 1]
+[-7,5,1]
+*Main> negatives [('b',10),('r',-2),('e',-3),('a',14),('k',-12)]
+[('r',-2),('e',-3),('k',-12)]
+*Main> mystery2 2 [1,2,3,4,5]
+[100,200,300,400,500]
+*Main> mystery 2 [1,2,3,4,5]
+[100,200,300,400,500]
+*Main>

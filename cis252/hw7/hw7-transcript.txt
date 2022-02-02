@@ -1,0 +1,63 @@
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\zayadur> cd '.\Google Drive\Documents\Syracuse University\CIS-252\hw7\'
+PS C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\hw7> ls
+
+
+    Directory: C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\hw7
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        3/24/2017   1:34 AM           2706 hw7.hs
+
+
+PS C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\hw7> ghci
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :l hw7.hs
+[1 of 1] Compiling Main             ( hw7.hs, interpreted )
+
+hw7.hs:22:1: warning: [-Wtabs]
+    Tab character found here, and in four further locations.
+    Please use spaces instead.
+Ok, modules loaded: Main.
+*Main> locate 'i' "mississippi"
+[2,5,8,11]
+*Main> putStrLn (histogram [5,3,1,4])
+*****
+***
+*
+****
+
+*Main> manyFuns [reverse, tail, take 2] "hello"
+["olleh","ello","he"]
+*Main> mySort (<=) [1,6,2,4,9,6,8]
+[1,2,4,6,6,8,9]
+*Main> mySort (>=) [1,6,2,4,9,6,8]
+[9,8,6,6,4,2,1]
+*Main> mySort (<=) "alphabetical order"
+" aaabcdeehilloprrt"
+*Main> mySort (>=) "alphabetical order"
+"trrpolliheedcbaaa "
+*Main> isFixPt (\x -> x*x) 0
+True
+*Main> isFixPt (\x -> x*x) 1
+True
+*Main> isFixPt (\x -> x*x) 2
+False
+*Main> isFixPt toUpper 'A'
+True
+*Main> isFixPt toUpper 'b'
+False
+*Main> isFixPt toUpper '?'
+True
+*Main> changeFirst even 33 [1,7,4,8,2]
+[1,7,33,8,2]
+*Main> changeFirst even 33 [1,7,9,5]
+[1,7,9,5]
+*Main> changeFirst isLower '!' "Syracuse"
+"S!racuse"
+*Main> changeFirst isLower '!' "SYRACUSE"
+"SYRACUSE"
+*Main>

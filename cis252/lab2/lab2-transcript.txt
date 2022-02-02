@@ -1,0 +1,25 @@
+PS C:\Users\zayadur> cd '.\Google Drive\Documents\Syracuse University\CIS-252\lab2\'
+PS C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\lab2> ls
+
+
+    Directory: C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\lab2
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/27/2017   3:11 AM            579 lab2.hs
+
+
+PS C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\lab2> ghci
+GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
+Prelude> :l lab2.hs
+[1 of 1] Compiling Main             ( lab2.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> price 4 3
+5275
+*Main> price 4 7
+7030
+*Main> price 9 (-1)
+0
+*Main> price 11 (-3)
+0

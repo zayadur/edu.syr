@@ -1,0 +1,81 @@
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\zayadur> cd '.\Google Drive\Documents\Syracuse University\CIS-252\hw
+PS C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\hw4> ls
+
+
+    Directory: C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-2
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        2/17/2017   2:04 AM           3524 hw4.hs
+
+
+PS C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\hw4> ghci
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :l hw4.hs
+[1 of 1] Compiling Main             ( hw4.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> myProduct [3,6,2,10]
+360
+*Main> myProduct [7,18,2,0,9]
+0
+*Main> myProduct []
+1
+*Main> myProduct [-3,6,2,10]
+-360
+*Main> shout "hello, world!"
+"HELLO, WORLD!"
+*Main> shout "Let's go, Orange!"
+"LET'S GO, ORANGE!"
+*Main> zap 'a' "abbadaab"
+"bbdb"
+*Main> zap 'b' "abbadaab"
+"aadaa"
+*Main> zap 'd' "abbadaab"
+"abbaaab"
+*Main> zap 'a' ""
+""
+*Main> pairUp [3,5,2,9]
+[(3,5),(2,9)]
+*Main> pairUp "abcde"
+[('a','b'),('c','d'),('e','e')]
+*Main> pairUp []
+[]
+*Main> neighbors [3,5,2,9]
+[(3,5),(5,2),(2,9),(9,9)]
+*Main> neighbors "abcde"
+[('a','b'),('b','c'),('c','d'),('d','e'),('e','e')]
+*Main> neighbors []
+[]
+*Main> bagCount bag1
+4
+*Main> bagCount bag2
+6
+*Main> bagCount bag4
+
+<interactive>:20:10: error:
+    * Variable not in scope: bag4 :: [(Char, Int)]
+    * Perhaps you meant one of these:
+        `bag1' (line 63), `bag2' (line 64), `bag3' (line 65)
+*Main> bagCount bag3
+5
+*Main> addToBag 'y' bag1
+[('y',1),('y',2),('y',1)*** Exception: hw4.hs:(85,1)-(87,41): Non-exhaustive patterns in function ad
+dToBag
+
+*Main> addToBag 'y' bag2
+[('y',3)]
+*Main> addToBag 'y' bag3
+[('y',1),('y',1),('y',1),('y',1),('y',1)*** Exception: hw4.hs:(85,1)-(87,41): Non-exhaustive pattern
+s in function addToBag
+
+*Main> removeFromBag 'e' bag1
+[('e',1)]
+*Main> removeFromBag 'e' bag2
+[('e',0)]
+*Main> removeFromBag 'e' bag3
+[('e',0)]
+*Main>

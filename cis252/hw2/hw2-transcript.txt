@@ -1,0 +1,90 @@
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\zayadur> cd '.\Google Drive\Documents\Syracuse University\CIS-252\hw2\'
+PS C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\hw2> ls
+
+
+    Directory: C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\hw2
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         2/1/2017   5:37 PM           3279 hw2.hs
+
+
+PS C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\hw2> ghci
+GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
+Prelude> :l hw2.hs
+[1 of 1] Compiling Main             ( hw2.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> compareChars 'a' 'a' 'a'
+"All equal"
+*Main> compareChars 'A' (toUpper 'a') 'A'
+"All equal"
+*Main> compareChars 'a' 'a' 'b'
+"Two match"
+*Main> compareChars 'a' 'b' 'a'
+"Two match"
+*Main> compareChars 'b' 'a' 'a'
+"Two match"
+*Main> compareChars 'x' 'y' 'z'
+"All distinct"
+*Main> compareChars 'a' 'A' 'a'
+"Two match"
+*Main> compareChars 'a' 'A' 'b'
+"All distinct"
+*Main>
+*Main> combine 1 2 3
+123
+*Main> combine 4 5 6
+456
+*Main> combine 0 1 2
+12
+*Main> combine 1 0 2
+102
+*Main> combine 1 2 0
+120
+*Main>
+*Main> splitFloat 1.2
+(1,0.20000005)
+*Main> splitFloat 3.4
+(3,0.4000001)
+*Main> splitFloat 5.67
+(5,0.6700001)
+*Main> splitFloat 8.90
+(8,0.8999996)
+*Main> splitFloat (-1.23)
+(-1,0.23000002)
+*Main> splitFloat (-98.76)
+(-98,0.76000214)
+*Main>
+*Main> stdCost 1 4 False
+50
+*Main> stdCost 1 4 True
+25
+*Main> stdCost 2 7 False
+105
+*Main> stdCost 2 7 True
+80
+*Main> powerCost 1 10 False
+80
+*Main> powerCost 1 10 True
+55
+*Main> powerCost 3 20 False
+176
+*Main> powerCost 3 20 True
+151
+*Main> powerCost 2 7 False
+88
+*Main> powerCost 2 7 True
+63
+*Main>
+*Main> bestPlan (-1) 4
+"Try again with real parameters"
+*Main> bestPlan 1 3
+"Standard"
+*Main> bestPlan 2 7
+"Power User"
+*Main> bestPlan 3 20
+"Power User"

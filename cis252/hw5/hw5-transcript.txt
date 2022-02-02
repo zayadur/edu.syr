@@ -1,0 +1,84 @@
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\zayad> cd '.\Google Drive\Documents\Syracuse University\CIS-252\hw5\'
+PS C:\Users\zayad\Google Drive\Documents\Syracuse University\CIS-252\hw5> ls
+
+
+    Directory: C:\Users\zayad\Google Drive\Documents\Syracuse University\CIS-252\hw5
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         3/2/2017   5:28 PM           2690 hw5.hs
+-a----        2/28/2017   8:30 PM         122452 hw5.pdf
+
+
+PS C:\Users\zayad\Google Drive\Documents\Syracuse University\CIS-252\hw5> ghci
+GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
+Prelude> :l hw5.hs
+[1 of 1] Compiling Main             ( hw5.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> duplicates "Two or more"
+True
+*Main> duplicates "Exactly four"
+False
+*Main> duplicates ""
+False
+*Main> zap 'a' "Abracadabra"
+"Abrcdbr"
+*Main> zap 'A' "Abracadabra"
+"bracadabra"
+*Main> zap 'b' ""
+""
+*Main> unique "Abracadabra"
+"Acd"
+*Main> unique ""
+""
+*Main> prefix "music" "musician"
+True
+*Main> prefix "music" "musingcian"
+False
+*Main> prefix "music" ""
+False
+*Main> prefix "" "musician"
+True
+*Main> prefix "" ""
+True
+*Main> subseq "music" "computer science"
+True
+*Main> subseq "music" "mustard cider"
+False
+*Main> subseq "" ""
+False
+*Main> subseq "" "computer science"
+True
+*Main> subseq "music" ""
+False
+*Main> substring "music" "computer science"
+False
+*Main> substring "mile" "smiled"
+True
+*Main> substring "music" ""
+False
+*Main> substring "" "computer science"
+*** Exception: hw5.hs:(64,1)-(67,42): Non-exhaustive patterns in function substring
+
+*Main> substring "" ""
+False
+*Main> subsequences "abcb"
+["abcb","abc","abb","ab","acb","ac","ab","a","bcb","bc","bb","b","cb","c","b",""]
+*Main> subsequences "abcd"
+["abcd","abc","abd","ab","acd","ac","ad","a","bcd","bc","bd","b","cd","c","d",""]
+*Main> subsequences ""
+[""]
+*Main>
+
+!!! AFTER APPLYING FIX TO SUBSEQ to account for non-exhaustive pattern error !!!
+
+*Main> :r
+[1 of 1] Compiling Main             ( hw5.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> subseq "" ""
+True
+*Main>

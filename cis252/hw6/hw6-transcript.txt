@@ -1,0 +1,64 @@
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\zayad> cd '.\Google Drive\Documents\Syracuse University\CIS-252\hw6\'
+PS C:\Users\zayad\Google Drive\Documents\Syracuse University\CIS-252\hw6> ls
+
+
+    Directory: C:\Users\zayad\Google Drive\Documents\Syracuse University\CIS-252\hw6
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         3/9/2017   7:40 PM           3290 hw6.hs
+
+
+PS C:\Users\zayad\Google Drive\Documents\Syracuse University\CIS-252\hw6> ghci
+GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
+Prelude> :l hw6.hs
+[1 of 1] Compiling Main             ( hw6.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> toppingCost Small Onions
+1.5
+*Main> toppingCost Large Chicken
+3.25
+*Main> sauceCost Small Tomato
+11.5
+*Main> sauceCost Large Pesto
+16.5
+*Main> cutCalories salad1
+Salad Small None
+*Main> cutCalories pizza2
+Pizza Small Tomato [Pepperoni,Pepperoni,Mushrooms]
+*Main> cutCalories breadsticks1
+Breadsticks Pesto
+*Main> willEat breadsticks1
+False
+*Main> willEat salad1
+True
+*Main> willEat pizza1
+True
+*Main> willEat pizza2
+False
+*Main> willEat (Pizza Small Pesto [Chicken])
+False
+*Main> price salad1
+9.5
+*Main> price pizza1
+11.5
+*Main> price pizza2
+20.75
+*Main> numToppings [salad1, breadsticks1]
+0
+*Main> numToppings [pizza1, pizza2]
+3
+*Main> numToppings order1
+0
+*Main> numToppings order2
+6
+*Main> promotion order1
+23.5
+*Main> promotion [breadsticks1]
+4.25
+*Main> promotion [pizza1, pizza2]
+20.75

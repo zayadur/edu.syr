@@ -1,0 +1,40 @@
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\zayad> cd '.\Google Drive\Documents\Syracuse University\CIS-252\lab4\'
+PS C:\Users\zayad\Google Drive\Documents\Syracuse University\CIS-252\lab4> ls
+
+
+    Directory: C:\Users\zayad\Google Drive\Documents\Syracuse University\CIS-252\lab4
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         2/9/2017   6:31 PM            912 lab4.hs
+
+
+PS C:\Users\zayad\Google Drive\Documents\Syracuse University\CIS-252\lab4> ghci
+GHCi, version 8.0.1: http://www.haskell.org/ghc/  :? for help
+Prelude> :l lab4.hs
+[1 of 1] Compiling Main             ( lab4.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> cycle3 8 10 20 30
+[10,20,30,10,20,30,10,20]
+*Main> cycle3 (-8) 10 20 30
+*** Exception: cycle3 requires positive input
+CallStack (from HasCallStack):
+  error, called at lab4.hs:11:19 in main:Main
+*Main> cycle3 5 2 4 6
+[2,4,6,2,4]
+*Main> cycle3 5 (-1) 3 (-5)
+[-1,3,-5,-1,3]
+*Main> switchback 15 0 77
+[0,77,77,0,0,77,77,0,0,77,77,0,0,77,77]
+*Main> switchback (-15) 11 22
+*** Exception: switchback requires nonnegative input
+CallStack (from HasCallStack):
+  error, called at lab4.hs:24:19 in main:Main
+*Main> switchback 10 11 22
+[11,22,22,11,11,22,22,11,11,22]
+*Main> switchback 10 11 (-22)
+[11,-22,-22,11,11,-22,-22,11,11,-22]

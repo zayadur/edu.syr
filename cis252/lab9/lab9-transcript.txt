@@ -1,0 +1,49 @@
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\zayadur> cd '.\Google Drive\Documents\Syracuse University\CIS-252\lab9\'
+PS C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\lab9> ls
+
+
+    Directory: C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\lab9
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         4/7/2017  12:29 AM           2917 lab9.hs
+
+
+PS C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\lab9> ghci
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :l lab9.hs
+[1 of 1] Compiling Main             ( lab9.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> :t one
+one :: Device
+*Main> :t two
+two :: ([Char], Int -> Bool)
+*Main> :t three
+three :: [Char] -> Bool
+*Main> :t four
+four :: [Char] -> [Bool]
+*Main> :t five
+five :: [Bool -> Device]
+*Main> :t six
+six :: (Bool, Integer, Char) -> Char
+*Main> :t seven
+seven :: Char -> Bool
+*Main> :t eight
+eight :: [[Double] -> [Shape]]
+*Main> :t nine
+nine :: Char -> Bool -> Char
+*Main> :t ten
+ten :: t1 -> t -> t
+*Main> :t eleven
+eleven :: ([Char], [t]) -> [(Char, t)]
+*Main> :t twelve
+twelve :: t4 -> t3 -> t2 -> [(t1, t) -> t2]
+*Main> :t thirteen
+thirteen :: a
+*Main> :t fourteen
+fourteen :: (Char -> Char -> Bool) -> Char -> Bool
+*Main>

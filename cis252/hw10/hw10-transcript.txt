@@ -1,0 +1,94 @@
+Windows PowerShell
+Copyright (C) 2016 Microsoft Corporation. All rights reserved.
+
+PS C:\Users\zayadur> cd '.\Google Drive\Documents\Syracuse University\CIS-252\hw10\'
+PS C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\hw10> ls
+
+
+    Directory: C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\hw10
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        4/21/2017   2:27 AM           2650 hw10.hs
+
+
+PS C:\Users\zayadur\Google Drive\Documents\Syracuse University\CIS-252\hw10> ghci
+GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help
+Prelude> :l hw10.hs
+[1 of 1] Compiling Main             ( hw10.hs, interpreted )
+Ok, modules loaded: Main.
+*Main> stats
+Enter 3 numbers:
+10
+25
+12
+(15.666667,12.0)
+*Main> printVert "Abracadabra!"
+A
+b
+r
+a
+c
+a
+d
+a
+b
+r
+a
+!
+12
+*Main> displayWords
+Enter text: Here is another line of text!
+Here
+is
+another
+line
+of
+text!
+*Main> displayWords2
+Enter text: Here is, yet another, line of text!
+1. Here
+2. is,
+3. yet
+4. another,
+5. line
+6. of
+7. text!
+*Main> nonzeros
+10
+-9
+8
+7
+-5
+1
+0
+[10,-9,8,7,-5,1]
+*Main> nonzeros
+5
+4
+3
+2
+1
+0
+[5,4,3,2,1]
+*Main> posAndNegs
+Enter series:
+300
+-300
+40
+1986
+0
+Frequency of nonzeros: 4
+Frequency of positives: 3
+Smallest negative number: -300
+*Main> posAndNegs
+Enter series:
+100
+200
+300
+0
+Frequency of nonzeros: 3
+Frequency of positives: 3
+No negative numbers detected
+*Main>

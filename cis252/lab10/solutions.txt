@@ -1,0 +1,8 @@
+Problem 1: cat daves 1985 | wc > literature
+Problem 2:
+    (a) grep '^x' /usr/share/dict/words | grep 't$'
+    (b) grep -i 'q' /usr/share/dict/words | grep -v 'u'
+    (c) grep '^[^aeiou]*a[^aeiou]*e[^aeiou]*i[^aeiou]*o[^aeiou]*u[^aeiou]*$' /usr/share/dict/words
+    ?(d) grep '^.......$' /usr/share/dict/words | grep '^*a.b.c*$'
+    ?(e) grep n\{5\} $w
+Problem 3: grep -c 'no' 1985
